@@ -1,0 +1,27 @@
+{
+    "name": "kuchat-re",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node backend/index.js",
+        "heroku-postbuild": "cd frontend && npm install && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "bip39": "^3.0.4",
+        "crypto": "^1.0.1",
+        "crypto-js": "^4.1.1",
+        "elliptic": "^6.5.4",
+        "express": "^4.17.3",
+        "express-session": "^1.17.2",
+        "node-sass": "^7.0.1",
+        "qrcode.react": "^3.0.1",
+        "react-copy-to-clipboard": "^5.1.0",
+        "react-qr-reader": "^3.0.0-beta-1",
+        "react-ripples": "^2.2.1"
+    }
+}
