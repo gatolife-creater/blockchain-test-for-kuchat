@@ -89,7 +89,7 @@ class Blockchain {
     return transactions;
   }
 
-  isChainValid() {
+  static isChainValid(blockchain) {
     /**
      * 一番最初のブロックはそれよりも前のブロックが存在しないので、
      * iは1から始める
@@ -111,7 +111,7 @@ class Blockchain {
    *
    * @param {Blockchain} anotherBlockchain
    */
-  replaceChain(anotherBlockchain) {
+  static replaceChain(anotherBlockchain) {
     if (!anotherBlockchain.isValid()) return false;
 
     if (!anotherBlockchain.chain.length > this.chain.length) return false;
